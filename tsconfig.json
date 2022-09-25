@@ -13,7 +13,8 @@
     "declarationMap": true,
     "baseUrl": ".",
     "paths": {
-      "@usrbinboat/*": ["packages/*", "packages/*/src", "packages/config/*"]
+      "@usrbinboat/*": ["packages/*", "packages/*/src"],
+      "@myorg/*": ["packages/*", "packages/*/src", "packages/config/*"]
     },
     "rootDirs": [
       ".",
