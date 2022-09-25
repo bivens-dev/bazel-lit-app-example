@@ -3,7 +3,7 @@
   <br>
   <h1>Lit + Bazel Template</h1>
   <p>
-    Template monorepo for building <a href="https://lit.dev" target="_blank">Lit</a> apps with <a href="https://bazel.build" target="_blank">Bazel</a>
+    Example monorepo for building <a href="https://lit.dev" target="_blank">Lit</a> apps with <a href="https://bazel.build" target="_blank">Bazel</a>
   </p>
   <p>
     Based on the <a href="https://github.com/pedrobarco/typescript-bazel-template" target="_blank">template by Pedro Barco</a>
