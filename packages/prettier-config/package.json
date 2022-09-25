@@ -1,0 +1,8 @@
+{
+  "name": "@usrbinboat/prettier-config",
+  "private": true,
+  "main": "index.json",
+  "peerDependencies": {
+    "prettier": ">= 2"
+  }
+}

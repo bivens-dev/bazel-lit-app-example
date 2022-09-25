@@ -1,0 +1,13 @@
+extends: ["@commitlint/config-angular"]
+rules:
+  scope-enum:
+    - 2
+    - "always"
+    - # libs
+      - "core"
+      - "add"
+      - "sub"
+      - "eslint"
+      - "prettier"
+      # apps
+      - "server"
