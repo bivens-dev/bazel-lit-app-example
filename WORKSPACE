@@ -28,10 +28,6 @@ RULES_GO_TAG = "0.34.0"
 
 RULES_GO_SHA = "16e9fca53ed6bd4ff4ad76facc9b7b651a89db1689a2877d6fd7b82aa824e366"
 
-RULES_DOCKER_TAG = "0.25.0"
-
-RULES_DOCKER_SHA = "b1e80761a8a8243d03ebca8845e9cc1ba6c82ce7c5179ce2b295cd36f7e394bf"
-
 http_archive(
     name = "rules_pkg",
     sha256 = RULES_PKG_SHA,
@@ -76,12 +72,6 @@ http_archive(
         "https://mirror.bazel.build/github.com/bazelbuild/rules_go/releases/download/v%s/rules_go-v%s.zip" % (RULES_GO_TAG, RULES_GO_TAG),
         "https://github.com/bazelbuild/rules_go/releases/download/v%s/rules_go-v%s.zip" % (RULES_GO_TAG, RULES_GO_TAG),
     ],
-)
-
-http_archive(
-    name = "io_bazel_rules_docker",
-    sha256 = RULES_DOCKER_SHA,
-    url = "https://github.com/bazelbuild/rules_docker/releases/download/v%s/rules_docker-v%s.tar.gz" % (RULES_DOCKER_TAG, RULES_DOCKER_TAG),
 )
 
 load("@rules_pkg//:deps.bzl", "rules_pkg_dependencies")
@@ -131,29 +121,3 @@ npm_translate_lock(
 load("@npm//:repositories.bzl", "npm_repositories")
 
 npm_repositories()
-
-load("@io_bazel_rules_docker//repositories:repositories.bzl", rules_docker_repositories = "repositories")
-
-rules_docker_repositories()
-
-load("@io_bazel_rules_docker//repositories:deps.bzl", rules_docker_deps = "deps")
-
-rules_docker_deps()
-
-load("@io_bazel_rules_docker//container:container.bzl", "container_pull")
-
-container_pull(
-    name = "debian_arm64",
-    architecture = "arm64",
-    digest = "sha256:bd276cb1059f6502e342d3052a4c2767f2b3a0196508f5c2c34ce6da4a15b104",
-    registry = "docker.io",
-    repository = "debian",
-)
-
-container_pull(
-    name = "debian_amd64",
-    architecture = "amd64",
-    digest = "sha256:9a67b70d0ba1d7c7690f917eedd8d24974dd8fd493205368b1e555a90c954208",
-    registry = "docker.io",
-    repository = "debian",
-)

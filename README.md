@@ -1,12 +1,15 @@
 <div align="center">
-  <a href="https://github.com/pedrobarco/typescript-bazel-template">
     <img width="100px" height="auto" src="https://blog.bazel.build/images/bazel-icon.svg" />
-  </a>
   <br>
-  <h1>Typescript + Bazel Template</h1>
+  <h1>Lit + Bazel Template</h1>
   <p>
-    Template monorepo for building typescript apps with <a href="https://bazel.build">Bazel</a>
+    Template monorepo for building <a href="https://lit.dev" target="_blank">Lit</a> apps with <a href="https://bazel.build" target="_blank">Bazel</a>
   </p>
+  <p>
+    Based on the <a href="https://github.com/pedrobarco/typescript-bazel-template" target="_blank">template by Pedro Barco</a>
+  </p>
+
+  <p><b>Note: This is highly experimental and in no way fit for use currently</b></p>
 </div>
 
 # Usage
@@ -20,9 +23,6 @@ Development
 
 - `bazel build //...` (Build all packages)
 - `bazel test //...` (Test all packages)
-- `bazel run //packages/server` (Start development backend service)
-- `bazel run //packages/server:image` (Build server image)
-- `docker run --rm -i -p 8080:8080 bazel/packages/server:image` (Run container image)
 - `bazel test //packages/<package>` (Run tests)
 
 Deployment (TBD)
@@ -31,14 +31,14 @@ Deployment (TBD)
 
 **Services**
 
-- [`server`](packages/server) **Typescript**, web application
+- TBD
 
 **Libraries**
 
-- [`@usrbinboat/core`](packages/core) **Typescript**, core operation class
-- [`@usrbinboat/add`](packages/add) **Typescript**, add operation class
+- [`@myorg/design-system`](packages/design-system/) **Typescript**, Lit based design system
+
 
 **Miscellaneous**
 
-- [`@usrbinboat/eslint-config`](packages/eslint-config), tooling and configurations for eslint
-- [`@usrbinboat/prettier-config`](packages/prettier-config), tooling and configurations for prettier
+- [`@myorg/eslint-config`](packages/config/eslint-config), tooling and configurations for eslint
+- [`@myorg/prettier-config`](packages/config/prettier-config), tooling and configurations for prettier

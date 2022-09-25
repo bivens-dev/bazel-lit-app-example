@@ -1,9 +1,0 @@
-{
-  "name": "@usrbinboat/server",
-  "private": true,
-  "main": "src/index.js",
-  "dependencies": {
-    "@usrbinboat/add": "workspace:*",
-    "@usrbinboat/core": "workspace:*"
-  }
-}
