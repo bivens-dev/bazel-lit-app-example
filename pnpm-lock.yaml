@@ -86,6 +86,12 @@ importers:
   packages/core:
     specifiers: {}
 
+  packages/design-system:
+    specifiers:
+      lit: ^2.3.0
+    dependencies:
+      lit: 2.3.1
+
   packages/server:
     specifiers:
       '@usrbinboat/add': workspace:*
@@ -1146,6 +1152,10 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.11
     dev: true
 
+  /@lit/reactive-element/1.4.1:
+    resolution: {integrity: sha512-qDv4851VFSaBWzpS02cXHclo40jsbAjRXnebNXpm0uVg32kCneZPo9RYVQtrTNICtZ+1wAYHu1ZtxWSWMbKrBw==}
+    dev: false
+
   /@microsoft/tsdoc-config/0.16.1:
     resolution: {integrity: sha512-2RqkwiD4uN6MLnHFljqBlZIXlt/SaUT6cuogU1w2ARw4nKuuppSmR0+s+NC+7kXBQykd9zzu0P4HtBpZT5zBpQ==}
     dependencies:
@@ -1408,6 +1418,10 @@ packages:
     dependencies:
       '@types/superagent': 4.1.15
     dev: true
+
+  /@types/trusted-types/2.0.2:
+    resolution: {integrity: sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg==}
+    dev: false
 
   /@types/ws/8.5.3:
     resolution: {integrity: sha512-6YOoWjruKj1uLf3INHH7D3qTXwFfEsg1kf3c0uDdSBJwfa/llkwIjrAGV7j7mVgGNbzTQ3HiHKKDXl6bJPD97w==}
@@ -4441,6 +4455,27 @@ packages:
   /lines-and-columns/1.2.4:
     resolution: {integrity: sha512-7ylylesZQ/PV29jhEDl3Ufjo6ZX7gCqJr5F7PKrqc93v7fzSymt1BpwEU8nAUXs8qzzvqhbjhK5QZg6Mt/HkBg==}
     dev: true
+
+  /lit-element/3.2.2:
+    resolution: {integrity: sha512-6ZgxBR9KNroqKb6+htkyBwD90XGRiqKDHVrW/Eh0EZ+l+iC+u+v+w3/BA5NGi4nizAVHGYvQBHUDuSmLjPp7NQ==}
+    dependencies:
+      '@lit/reactive-element': 1.4.1
+      lit-html: 2.3.1
+    dev: false
+
+  /lit-html/2.3.1:
+    resolution: {integrity: sha512-FyKH6LTW6aBdkfNhNSHyZTnLgJSTe5hMk7HFtc/+DcN1w74C215q8B+Cfxc2OuIEpBNcEKxgF64qL8as30FDHA==}
+    dependencies:
+      '@types/trusted-types': 2.0.2
+    dev: false
+
+  /lit/2.3.1:
+    resolution: {integrity: sha512-TejktDR4mqG3qB32Y8Lm5Lye3c8SUehqz7qRsxe1PqGYL6me2Ef+jeQAEqh20BnnGncv4Yxy2njEIT0kzK1WCw==}
+    dependencies:
+      '@lit/reactive-element': 1.4.1
+      lit-element: 3.2.2
+      lit-html: 2.3.1
+    dev: false
 
   /locate-path/2.0.0:
     resolution: {integrity: sha512-NCI2kiDkyR7VeEKm27Kda/iQHyKJe1Bu0FlTbYp3CqJu+9IFe9bLyAjMxf5ZDDbEg+iMPzB5zYyUTSm8wVTKmA==}

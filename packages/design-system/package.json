@@ -1,0 +1,9 @@
+{
+  "name": "@myorg/design-system",
+  "version": "1.0.0",
+  "description": "A Lit Based Design System starter kit",
+  "type": "module",
+  "dependencies": {
+    "lit": "^2.3.0"
+  }
+}
