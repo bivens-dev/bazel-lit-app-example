@@ -20,9 +20,7 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "noImplicitOverride": true,
-    "incremental": true,
-    "tsBuildInfoFile": ".tsbuildinfo"
   },
-  "include": ["src/**/*.ts", "typings/*.d.ts", "node_modules/**/.js"],
+  "include": ["src/**/*.ts", "typings/*.d.ts"],
   "exclude": []
 }
