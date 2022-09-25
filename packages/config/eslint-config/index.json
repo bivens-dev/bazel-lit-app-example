@@ -9,7 +9,8 @@
     "eslint:recommended",
     "plugin:import/recommended",
     "plugin:sonarjs/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:lit/recommended"
   ],
   "rules": {
     "simple-import-sort/imports": "error",
