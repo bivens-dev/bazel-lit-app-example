@@ -62,19 +62,10 @@ importers:
       tslib: 2.4.0
       typescript: 4.6.3
 
-  packages/add:
-    specifiers:
-      '@usrbinboat/core': workspace:*
-    dependencies:
-      '@usrbinboat/core': link:../core
-
   packages/config/eslint-config:
     specifiers: {}
 
   packages/config/prettier-config:
-    specifiers: {}
-
-  packages/core:
     specifiers: {}
 
   packages/design-system:
