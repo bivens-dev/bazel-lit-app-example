@@ -1,5 +1,5 @@
 {
-  "name": "@usrbinboat/prettier-config",
+  "name": "@myorg/prettier-config",
   "private": true,
   "main": "index.json",
   "peerDependencies": {

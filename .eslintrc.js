@@ -1,5 +1,5 @@
 module.exports = {
-    extends: "@usrbinboat",
+    extends: "@myorg",
     parserOptions: {
         project: "./tsconfig.eslint.json",
         tsconfigRootDir: __dirname,

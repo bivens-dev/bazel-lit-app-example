@@ -1,5 +1,5 @@
 {
-  "name": "@usrbinboat/eslint-config",
+  "name": "@myorg/eslint-config",
   "private": true,
   "main": "index.json",
   "peerDependencies": {

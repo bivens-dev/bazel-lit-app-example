@@ -7,7 +7,7 @@ load("@npm//:prettier/package_json.bzl", "bin")
 def prettier(
         srcs = None,
         deps = [
-            "//:node_modules/@usrbinboat/prettier-config",
+            "//:node_modules/@myorg/prettier-config",
             "//:node_modules/c8",
         ],
         config = "//:prettierrc",
