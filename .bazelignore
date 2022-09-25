@@ -1,7 +1,4 @@
 node_modules
-packages/core/node_modules
-packages/add/node_modules
-packages/server/node_modules
 packages/config/prettier-config/node_modules
 packages/config/eslint-config/node_modules
 packages/design-system/node_modules
