@@ -2,6 +2,8 @@ load("@aspect_rules_ts//ts:defs.bzl", "ts_config", "ts_project")
 load("@aspect_rules_js//npm:defs.bzl", "npm_package")
 load("//tools/nodejs:index.bzl", "prettier", "web_dev_server")
 load("@npm//:defs.bzl", "npm_link_all_packages")
+load("@aspect_rules_js//js:defs.bzl", "js_run_binary")
+
 
 npm_link_all_packages(name = "node_modules")
 
