@@ -1,0 +1,9 @@
+{
+  "name": "@myorg/web-dev-server-config",
+  "private": true,
+  "main": "web-dev-server.config.mjs",
+  "type": "module",
+  "peerDependencies": {
+    "@web/dev-server": ">= 0"
+  }
+}

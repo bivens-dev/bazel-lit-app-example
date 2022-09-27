@@ -1,0 +1,14 @@
+load("//tools/nodejs:index.bzl", "prettier")
+load("@aspect_rules_js//npm:defs.bzl", "npm_package")
+load("@npm//:defs.bzl", "npm_link_all_packages")
+
+npm_package(
+    name = "web-dev-server-config",
+    srcs = [
+        "web-dev-server.config.mjs",
+        "package.json",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+prettier()
