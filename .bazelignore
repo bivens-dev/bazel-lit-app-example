@@ -2,3 +2,4 @@ node_modules
 packages/config/prettier-config/node_modules
 packages/config/eslint-config/node_modules
 packages/design-system/node_modules
+packages/config/web-dev-server-config/node_modules

@@ -7,6 +7,7 @@
     "@jest/types": "^29.0.1",
     "@myorg/eslint-config": "workspace:*",
     "@myorg/prettier-config": "workspace:*",
+    "@myorg/web-dev-server-config": "workspace:*",
     "@types/jest": "^27.4.1",
     "@types/node": "^17.0.25",
     "@types/supertest": "^2.0.12",
