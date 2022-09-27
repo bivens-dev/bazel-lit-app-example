@@ -24,6 +24,7 @@ Development
 - `bazel build //...` (Build all packages)
 - `bazel test //...` (Test all packages)
 - `bazel test //packages/<package>` (Run tests)
+- `bazel run //packages/design-system:web_dev_server` Run Web Dev Server (Design System Only)
 
 Deployment (TBD)
 
